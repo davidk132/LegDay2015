@@ -1,0 +1,26 @@
+# Site settings
+baseurl: "" 
+# url: "http://yourdomain.com" # the base hostname 
+title: Legislative Day 2015
+author: David Kissinger
+phone: (562)761-6504
+email: david@soutbayaor.com
+description: "Join California REALTORS® in Sacramento - April 29, 2015"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+exclude: [README.txt]
+# baseurl: ""
+# url: "http://www.yourdomain.com"
+# paginate: 5
+# paginate_path: "blog/page:num"
+
+# pre-processors
+sass:
+    sass_dir: _sass
+    style: :nested
+    full_exception: true
+    
+# Change sass: style: to :compressed in production
+# Change full_exception: to false in production

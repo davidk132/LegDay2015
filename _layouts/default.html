@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}  
+
+  <body {% if page.title == "Welcome to Legislative Day 2015" %}class="front"{% endif %}>
+
+    {% include header.html %}
+
+    {{ content }}
+    
+    {% include footer.html %}
+    
+
+  </body>
+
+</html>

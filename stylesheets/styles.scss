@@ -1,0 +1,63 @@
+---
+---
+
+// SASS file for DKD template using Bootstrap and Jekyll
+// Documentation here: http://kvurd.com/blog/my-jekyll-blog-setup-bootstrap-sass-pygments/
+
+// Color Scheme. Set base scheme colors here, and then override them below.
+
+
+$main-color: #1C42A1;
+$secondary-color: #7873AF;
+$accent-color-one: #FFF1C9;
+$accent-color-two: #FCDB98;
+$box-bkg-color: rgba(28,66,161,0.5);
+
+// Mixins
+
+
+// override Bootstrap variables here, before importing it
+
+$jumbotron-bg: transparent;
+$navbar-default-bg: transparent;
+$navbar-default-link-color: $main-color;
+$jumbotron-color: $main-color;
+
+// import Bootstrap
+@import "bootstrap";
+
+// remaining SASS goes here, including any new variables based on Bootstrap vars
+
+// Background pattern from subtlepatterns.com 
+
+// Border radius mixin
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.front {
+  background-image: url("../assets/capitolmallopaque.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  h1, h2 {
+    color: $main-color;
+    small {
+      color: $main-color;
+      }
+    }
+  }
+  
+// class transbox is for semi-transparent boxes of copy on top of fixed background image
+.transbox {
+  background-color: $box-bkg-color;
+  @include border-radius(5px);
+  padding: 5px;
+  h1, h2, h3, h4, h5, a, li, p, small, span {
+    color: #FFF;
+    }
+  }
+  
+  

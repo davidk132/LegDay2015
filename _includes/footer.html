@@ -1,0 +1,62 @@
+<footer class="site-footer">
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactform" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="seatinglabel">Contact</h4>
+      </div>
+      <div class="modal-body">
+        {% include contactform.html %}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Info Modal -->
+<div class="modal fade" id="eventinfo" tabindex="-1" role="dialog" aria-labelledby="eventinfo" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="eventinfolabel">Seating at Legislative Day</h4>
+      </div>
+      <div class="modal-body">
+        <h1>Important Information about seating assignments in the Convention Center</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies, libero sit amet accumsan hendrerit, dui nisl pretium sapien, eget ultricies risus magna id ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet cursus tortor. Aenean a aliquam sapien. Vestibulum vulputate convallis tortor, at aliquam sapien laoreet eu. Aliquam pulvinar lacus ac hendrerit euismod. Nulla ac tellus enim. Maecenas ornare tincidunt nunc, at imperdiet metus laoreet in. In elementum dolor in metus maximus, vel sagittis diam pharetra. Integer aliquam enim nisl. Morbi cursus, metus a venenatis facilisis, augue lorem sagittis odio, vitae cursus ante est non ligula. Duis dui orci, vehicula sed arcu in, tristique convallis ex. Integer vel ornare felis, nec eleifend libero. Praesent sed justo ac est bibendum suscipit at eu lectus.</p>
+
+        <p>Morbi et facilisis ipsum. Mauris non nulla vitae orci vehicula blandit. Pellentesque ullamcorper non lorem rutrum dictum. Integer eget metus pharetra, malesuada metus in, iaculis velit. Phasellus blandit massa sed finibus iaculis. Aliquam placerat ante nec tempus sollicitudin. Cras egestas vehicula interdum. Cras nec augue dui. Duis accumsan tempus justo, eget auctor mauris lobortis vitae. Duis convallis vel eros non venenatis. Donec faucibus lobortis aliquet. Proin vehicula, massa at placerat feugiat, leo turpis ultrices urna, eget ultrices metus mi nec metus. Vivamus finibus massa dignissim lacus luctus, et sagittis erat accumsan. Duis lobortis sodales luctus.</p>
+
+        <p>Morbi vitae neque nibh. Sed lacinia iaculis nibh, ut congue ante commodo quis. Curabitur congue, orci in gravida porta, diam nisl commodo arcu, eu sagittis nisi nunc ac velit. Suspendisse finibus sodales orci, sed aliquam quam luctus vitae. Nam sit amet maximus purus. Vivamus iaculis enim sed elementum viverra. Sed nec elit convallis, fringilla tellus quis, placerat arcu. Maecenas a ullamcorper ipsum, ac luctus quam.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container" style="background-color:rgba(0,0,0,0);">
+
+    <div class="row transbox">
+      <div class="col-md-4">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#contactForm">Contact C.A.R.</button>
+      </div>
+
+      <div class="col-md-8">
+        <h4>Act now! Deadline to sign up is XX-XX-2015!<br /><small>You will not be guaranteed seating if you sign up after the deadline. Click here for details on Leg Day seating.</small></h4>
+        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#eventinfo">More Information</button>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<br /><br />

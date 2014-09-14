@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Welcome to Legislative Day 2015</title>
+    <meta name="description" content="Join California REALTORS® in Sacramento - April 29, 2015">
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="canonical" href="/">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/signup.js"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- placeholder for Google Analytics code -->
+
+
+</head>
+  
+
+  <body class="front">
+
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Icon</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Legislative Day 2015 <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">View Seating Chart</a></li>
+            <li class="divider"></li>
+            <li><a href="#">About Leg Day</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://www.car.org/governmentaffairs/raf/">REALTOR&reg; Action Fund</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">About C.A.R.<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="http:///www.car.org">C.A.R. website</a></li>
+            <li><a href="http://www.car.org/governmentaffairs/getinvolved/">Get Involved!</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <!-- Seating Modal -->
+<div class="modal fade" id="seating" tabindex="-1" role="dialog" aria-labelledby="seating" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="seatinglabel">Sacramento Convention Center Seating Chart</h4>
+      </div>
+      <div class="modal-body">
+        <h1>Seating Chart Goes Here</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="signuplabel">Sign up your members here for Leg Day 2015</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Submit Legislative Day Attendees</h2>
+        <p>AEs and GADs: Enter all attendees, including C.A.R. Directors, on this page. Your members will not be guaranteed seating unless they are entered here. If you already registered your members for C.A.R. EXPO, they must also be registered on this page.</p>
+        <p> This form is for AEs and GADs only. If you are not an AE or a GAD, please contact your local REALTOR&reg; association.</p>
+        
+        <form class="form-inline" id="passcode" role="form">
+  <div class="form-group">
+    <label for="validate">Registration Code</label>
+    <input type="text" class="form-control" id="regCode" placeholder="Enter code here">
+  </div>
+  <button type="submit" class="btn btn-primary btn-sm">Submit</button><br />
+</form>
+
+<p>
+  <button type="button" id="addnew" class="btn btn-danger">Add New Attendee</button>
+<p>
+
+<form class="form-inline" role="form" id="addForm">
+  <div class="add-single-form">
+  <div class="form-group">
+    <label class="sr-only" for="firstName">First Name</label>
+    <input type="text" class="form-control" name="firstName[]" placeholder="First Name">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="lastName">Last Name</label>
+    <input type="text" class="form-control" name="lastName[]" placeholder="Last Name">
+  </div>
+  <div class="form-group">
+    <label class="sr-only" for="localAOR">Local Association</label>
+    <input type="text" class="form-control" name="localAOR[]" placeholder="Local Association">
+  </div>
+  <div class="checkbox" name="director[]">
+    <label>
+      <input type="checkbox">C.A.R. Director
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" name="minraf[]">Minimum $148 RAF
+    </label>
+  </div>
+  <button type="button" class="btn btn-danger btn-sm remove">Remove</button>
+  </div>
+  </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-success">Finished</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="page-header">
+    <h1>Legislative Day 2015<br /><small>Join California REALTORS® in Sacramento - April 29, 2015<small></h1>
+    </div>
+    <div class="row">
+      <div class="transbox col-sm-5">
+        <p>AEs and GADs: Click on the buttons below to view a seating chart and to sign up your REALTOR<sup>®</sup> members for Legislative Day in Sacramento</p>
+        <p>
+        <button type="button" class="btn btn-info btn-jg" data-toggle="modal" data-target="#seating">Seating Chart</button>
+        <button type="button" class="btn btn-primary btn-jg" data-toggle="modal" data-target="#signup">Sign Up!</button>
+        </p>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+<div class="container">
+</div>
+
+    
+    <footer class="site-footer">
+
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactForm" tabindex="-1" role="dialog" aria-labelledby="contactform" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="seatinglabel">Contact</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="contactFirstName" placeholder="Your name here">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" id="phone" placeholder="Your phone here">
+  </div>
+  <div class="form-group">
+    <label for="emailAddr">Email</label>
+    <input type="email" class="form-control" id="emailAddr" placeholder="Email address">
+  </div>
+  <div class="form-group">
+    <label for="contactComment">Comment</label>
+    <input type="password" class="form-control" id="contactComment" placeholder="Question or comment here">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Info Modal -->
+<div class="modal fade" id="eventinfo" tabindex="-1" role="dialog" aria-labelledby="eventinfo" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="eventinfolabel">Seating at Legislative Day</h4>
+      </div>
+      <div class="modal-body">
+        <h1>Important Information about seating assignments in the Convention Center</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ultricies, libero sit amet accumsan hendrerit, dui nisl pretium sapien, eget ultricies risus magna id ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet cursus tortor. Aenean a aliquam sapien. Vestibulum vulputate convallis tortor, at aliquam sapien laoreet eu. Aliquam pulvinar lacus ac hendrerit euismod. Nulla ac tellus enim. Maecenas ornare tincidunt nunc, at imperdiet metus laoreet in. In elementum dolor in metus maximus, vel sagittis diam pharetra. Integer aliquam enim nisl. Morbi cursus, metus a venenatis facilisis, augue lorem sagittis odio, vitae cursus ante est non ligula. Duis dui orci, vehicula sed arcu in, tristique convallis ex. Integer vel ornare felis, nec eleifend libero. Praesent sed justo ac est bibendum suscipit at eu lectus.</p>
+
+        <p>Morbi et facilisis ipsum. Mauris non nulla vitae orci vehicula blandit. Pellentesque ullamcorper non lorem rutrum dictum. Integer eget metus pharetra, malesuada metus in, iaculis velit. Phasellus blandit massa sed finibus iaculis. Aliquam placerat ante nec tempus sollicitudin. Cras egestas vehicula interdum. Cras nec augue dui. Duis accumsan tempus justo, eget auctor mauris lobortis vitae. Duis convallis vel eros non venenatis. Donec faucibus lobortis aliquet. Proin vehicula, massa at placerat feugiat, leo turpis ultrices urna, eget ultrices metus mi nec metus. Vivamus finibus massa dignissim lacus luctus, et sagittis erat accumsan. Duis lobortis sodales luctus.</p>
+
+        <p>Morbi vitae neque nibh. Sed lacinia iaculis nibh, ut congue ante commodo quis. Curabitur congue, orci in gravida porta, diam nisl commodo arcu, eu sagittis nisi nunc ac velit. Suspendisse finibus sodales orci, sed aliquam quam luctus vitae. Nam sit amet maximus purus. Vivamus iaculis enim sed elementum viverra. Sed nec elit convallis, fringilla tellus quis, placerat arcu. Maecenas a ullamcorper ipsum, ac luctus quam.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container" style="background-color:rgba(0,0,0,0);">
+
+    <div class="row transbox">
+      <div class="col-md-4">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#contactForm">Contact C.A.R.</button>
+      </div>
+
+      <div class="col-md-8">
+        <h4>Act now! Deadline to sign up is XX-XX-2015!<br /><small>You will not be guaranteed seating if you sign up after the deadline. Click here for details on Leg Day seating.</small></h4>
+        <button type="button" class="btn btn-info btn-xs" data-toggle="modal" data-target="#eventinfo">More Information</button>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+<br /><br />
+    
+
+  </body>
+
+</html>

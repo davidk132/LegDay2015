@@ -1,0 +1,69 @@
+---
+layout: default
+title: Welcome to Legislative Day 2015
+---
+
+<!-- Seating Modal -->
+<div class="modal fade" id="seating" tabindex="-1" role="dialog" aria-labelledby="seating" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="seatinglabel">Sacramento Convention Center Seating Chart</h4>
+      </div>
+      <div class="modal-body">
+        <h1>Seating Chart Goes Here</h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signup" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="signuplabel">Sign up your members here for Leg Day 2015</h4>
+      </div>
+      <div class="modal-body">
+        <h2>Submit Legislative Day Attendees</h2>
+        <p>AEs and GADs: Enter all attendees, including C.A.R. Directors, on this page. Your members will not be guaranteed seating unless they are entered here. If you already registered your members for C.A.R. EXPO, they must also be registered on this page.</p>
+        <p> This form is for AEs and GADs only. If you are not an AE or a GAD, please contact your local REALTOR&reg; association.</p>
+        
+        {% include signupform.html %}
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-success">Finished</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="jumbotron">
+  <div class="container">
+    <div class="page-header">
+    <h1>{{ site.title }}<br /><small>{{ site.description }}<small></h1>
+    </div>
+    <div class="row">
+      <div class="transbox col-sm-5">
+        <p>AEs and GADs: Click on the buttons below to view a seating chart and to sign up your REALTOR<sup>®</sup> members for Legislative Day in Sacramento</p>
+        <p>
+        <button type="button" class="btn btn-info btn-jg" data-toggle="modal" data-target="#seating">Seating Chart</button>
+        <button type="button" class="btn btn-primary btn-jg" data-toggle="modal" data-target="#signup">Sign Up!</button>
+        </p>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+<div class="container">
+</div>
